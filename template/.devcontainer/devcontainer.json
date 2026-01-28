@@ -1,0 +1,32 @@
+{
+    "name": "Cloudflare Workers Development",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": "true",
+            "username": "node",
+            "upgradePackages": "false"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscode.typescript-language-features"
+            ],
+            "settings": {
+                "editor.formatOnSave": true
+            }
+        }
+    },
+    "postCreateCommand": "npm install",
+    "forwardPorts": [],
+    "remoteUser": "node",
+    "hostRequirements": {
+        "cpus": 2,
+        "memory": "4gb"
+    }
+}
