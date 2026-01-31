@@ -3,6 +3,8 @@
     "build": {
         "dockerFile": "Dockerfile" 
     },
+    "workspaceFolder": "/workspaces/cloudflare-workers-template/template",
+
     "features": {
         "ghcr.io/devcontainers/features/git:1": {},
         "ghcr.io/devcontainers/features/github-cli:1": {},
@@ -30,3 +32,4 @@
         "memory": "4gb"
     }
 }
+
